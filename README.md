@@ -57,7 +57,7 @@ Run this in a Command Prompt. It checks your microphone, the speech model and te
 "%LOCALAPPDATA%\Programs\Tiro\Tiro.exe" --selftest
 ```
 
-**Nothing happens when I hold the key** — another app may already use Right Ctrl. Open Tiro → **General** and pick a different key.
+**Nothing happens when I hold the key, or it's suddenly slow** — another app probably has Right Ctrl. The usual cause is another dictation app such as **Wispr Flow**, which can add itself back to startup when it updates and take the key before Tiro does. Your dictation then goes through that app instead, which is slower. Tiro shows a notification when it sees one running. Quit it and turn off its start-at-login setting, or uninstall it. For any other conflict, open Tiro → **General** and pick a different key.
 
 **It types nothing** — open Tiro → **General → Test microphone**. It shows a live level bar and names the device it's using. If Windows is blocking access: **Settings → Privacy & security → Microphone**, turn on *Microphone access* and *Let desktop apps access your microphone*.
 
