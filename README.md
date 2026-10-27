@@ -8,9 +8,14 @@ Speech recognition runs **entirely on your own computer**. No audio is uploaded,
 
 ## Download
 
-### [⬇ Download Tiro-Setup.exe](../../releases/latest)
+### [⬇ Go to the latest release](../../releases/latest)
 
-Run it. No admin password needed.
+| File | Who it is for |
+|---|---|
+| **Tiro-Setup-GPU.exe** (~670 MB) | You have an NVIDIA graphics card. Includes everything the GPU needs. |
+| **Tiro-Setup.exe** (~90 MB) | Everyone else. Runs on the CPU. |
+
+Run it. No admin password needed. Already have Tiro? Run the new installer over it; your settings and history are kept.
 
 Windows will show **"Windows protected your PC"** because the installer isn't code-signed — click **More info → Run anyway**. That warning appears for all independent software, not just this.
 
@@ -26,6 +31,8 @@ The first launch downloads the speech model once (a few hundred MB on most machi
 | **Double-tap Right Ctrl** | Hands-free — keep talking, tap again when done. |
 | **Esc** | Throw the current dictation away. |
 
+While you talk, music or video that is playing turns down and comes back when you let go. Tiro plays a quiet blip when the mic opens and closes; both are under **General** if you want them off.
+
 Closing the window doesn't quit — Tiro keeps running in the tray so the hotkey still works. **Quit Tiro** in the tray menu actually exits.
 
 ---
@@ -34,10 +41,10 @@ Closing the window doesn't quit — Tiro keeps running in the tray so the hotkey
 
 | Your machine | Typical |
 |---|---|
-| NVIDIA graphics card | ~220 ms |
+| NVIDIA graphics card (GPU installer) | ~200 ms |
 | CPU only | ~440 ms |
 
-Both are well under a second. Tiro picks the right model for your hardware automatically — nothing to configure.
+Both are well under a second. Tiro picks the right model for your hardware automatically — nothing to configure. If you have an NVIDIA card but installed the small installer, Tiro tells you it is running on the CPU; install the GPU one over it.
 
 ---
 
